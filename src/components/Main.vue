@@ -163,7 +163,7 @@ export default {
     &-title {
       margin: 0;
       position: absolute;
-      top: 285px;
+      top: 310px;
       color: #ffff;
       text-transform: uppercase;
 
