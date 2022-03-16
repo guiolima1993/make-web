@@ -43,11 +43,17 @@
       </div>
     </div>
   </div>
+  <InstalarProdutos />
 </template>
 
 <script>
+import InstalarProdutos from './InstalarProdutos.vue'
+
 export default {
-  name: 'Produtos'
+  name: 'Produtos',
+  components: {
+    InstalarProdutos
+  }
 }
 </script>
 
@@ -108,7 +114,7 @@ export default {
             background: #e2e2e2;
           }
 
-              @media (max-width: 990px) {
+          @media (max-width: 990px) {
             padding: 5px 15px;
             font-size: 15px;
           }
@@ -122,6 +128,7 @@ export default {
 
         &-img {
           flex: 1 0 60%;
+          text-align: right;
 
           img {
             max-width: 100%;
@@ -158,6 +165,7 @@ export default {
 
         &-img {
           flex: 1 0 60%;
+          text-align: left;
 
           img {
             max-width: 100%;

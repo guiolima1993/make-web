@@ -15,6 +15,11 @@
         </ul>
       </div>
     </header>
+    <div class="main-banner-icon">
+      <a href="#">
+        <img src="../assets/images/whats.png" alt="Logo Whatsapp">
+      </a>
+    </div>
     <div class="container">
       <div class="main-banner-img">
         <img class="main-banner-content" src="../assets/images/banner.png" alt="Imagem de Banheiro">
@@ -22,6 +27,9 @@
       <div class="main-banner-title">
         <h3 class="main-banner-title-project">Design</h3>
         <h1 class="main-banner-title-modern">Moderno</h1>
+        <div class="main-banner-title-line">
+
+        </div>
         <p class="main-banner-title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum placeat quaerat, tempora quibusdam possimus omnis, ratione exercitationem nostrum, excepturi eligendi repellendus corrupti. Quis qui repellat minima deleniti! Quibusdam, enim illo.</p>
       </div>
     </div>
@@ -44,7 +52,6 @@ export default {
 <style scoped lang="scss">
 .header {
   width: 100%;
-  
   position: fixed;
   z-index: 1;
   display: flex;
@@ -154,6 +161,8 @@ export default {
     text-align: center;
     
     &-img {
+      animation: show 6s;
+
       img {
         width: 100%;
         height: 100vh;
@@ -175,10 +184,25 @@ export default {
       &-modern {
         font-size: 80px;
         margin: -20px 0 0 0;
+
+        @media (max-width: 430px) {
+          font-size: 55px;
+        }
+      }
+
+      &-line {
+        width: 100%;
+        max-width: 50px;
+        border: 2px solid #C41520;
+        position: absolute;
+        left: 32%;
+        margin-top: -15px;
+        transform: rotate(-179.29deg);
       }
 
       &-text {
         padding: 0 336px;
+        margin: 0;
 
         @media (max-width: 1005px) {
           padding: 0 30px;
@@ -189,5 +213,29 @@ export default {
         top: 400px;
       }
     }
+
+    &-icon {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+    }
   }
+
+  @keyframes show {
+    0% {
+        transform: scaleZ(100%);
+    }
+    25% {
+        transform: scale(110%);
+    }
+    50% {
+      transform: scale(130%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
 </style>
