@@ -59,6 +59,10 @@ export default {
     text-align: center;
     margin-top: 10px;
 
+    @media (max-width: 920px) {
+      margin-top: 30px;
+    }
+
     a {
       margin: 0 5px 0 5px;
     }
@@ -79,6 +83,15 @@ export default {
     position: absolute;
     left: calc(50% - 29px/2 + 472.5px);
     top: 15%;
+
+    @media (max-width: 1200px) {
+      left: calc(50% + 29px/2 - 472.5px);
+    }
+
+    @media (max-width: 920px) {
+      left: calc(50% + 29px/2 - 100.5px);
+      top: 0;
+    }
   }
 
   &-mail {
@@ -89,6 +102,15 @@ export default {
     position: absolute;
     left: calc(50% - 29px/2 + 472.5px);
     top: 40%;
+
+    @media (max-width: 1200px) {
+      left: calc(50% + 29px/2 - 472.5px);
+    }
+
+    @media (max-width: 920px) {
+      left: calc(50% + 29px/2 - 100.5px);
+      top: 20%;
+    }
   }
 
   &-icon {

@@ -14,8 +14,13 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  margin: 0;
-  padding: 0;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500&display=swap');
+
+  #app {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+  }
 </style>

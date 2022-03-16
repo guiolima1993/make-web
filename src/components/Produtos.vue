@@ -8,7 +8,7 @@
         </h1>
         <div class="products-section-left-after"></div>
         <p class="products-section-left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis reprehenderit, ipsam minima sunt praesentium error maiores eum quibusdam, esse, corporis placeat explicabo exercitationem! Enim consequatur minus quia cum. Est.</p>
-        <button class="products-section-left-btn">Saiba mais</button>
+        <a href="#" class="products-section-left-link">Saiba mais</a>
       </div>
       <div class="products-section-left-img">
         <img src="../assets/images/unsplash_BQ5skcjX24o.png" alt="Imagem de Pessoa lavando a mão">
@@ -25,7 +25,7 @@
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, consectetur! Voluptates aut, cumque quia minus perspiciatis, velit ratione perferendis sapiente ea ut et. Minus quas modi, nemo et inventore laborum.
         </p>
-        <button class="products-section-left-btn">Saiba mais</button>
+        <a href="#" class="products-section-left-link">Saiba mais</a>
       </div>
     </div>
     <div class="products-section">
@@ -36,7 +36,7 @@
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deserunt nostrum obcaecati incidunt quas laborum aliquam vitae id velit itaque adipisci nulla vero temporibus consequatur et cupiditate, quod, fugiat cum!
         </p>
-        <button class="products-section-left-btn">Saiba mais</button>
+        <a href="#" class="products-section-left-link">Saiba mais</a>
       </div>
       <div class="products-section-left-img">
         <img src="../assets/images/cat1.png" alt="Imagem de Relógio">
@@ -66,6 +66,7 @@ export default {
       padding: 0 10px;
       font-size: 80px;
       text-transform: uppercase;
+      font-weight: 100;
 
       @media (max-width: 990px) {
         font-size: 40px;
@@ -87,6 +88,7 @@ export default {
           font-size: 50px;
           text-transform: uppercase;
           margin: 0;
+          font-weight: 100;
 
           @media (max-width: 990px) {
             font-size: 30px;
@@ -95,13 +97,15 @@ export default {
 
         &-text {
           font-size: 17px;
+          font-weight: 100;
+          margin: 30px 0;
 
           @media (max-width: 990px) {
             font-size: 10px;
           }
         }
 
-        &-btn {
+        &-link {
           padding: 10px 20px;
           text-transform: uppercase;
           font-size: 25px;
@@ -109,6 +113,9 @@ export default {
           background: transparent;
           cursor: pointer;
           transition: all .6s;
+          font-weight: 200;
+          text-decoration: none;
+          color: #000;
 
           &:hover {
             background: #e2e2e2;

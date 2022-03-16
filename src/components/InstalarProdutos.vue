@@ -8,7 +8,7 @@
         </select>
       </div>
       <div class="install-products-content-acess">
-        <button class="install-products-content-acess-btn">Acessar</button>
+        <a href="#" class="install-products-content-acess-btn">Acessar</a>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
     &-title {
       font-size: 40px;
       text-transform: uppercase;
-      font-weight: light;
+      font-weight: 300;
 
       @media (max-width: 880px) {
         font-size: 20px;
@@ -65,7 +65,7 @@ export default {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background: #e9e9e9 url('../assets/images/vector.png') 95.66% 50% no-repeat;
+      background: #ffff url('../assets/images/vector.png') 95.66% 50% no-repeat;
 
       @media (max-width: 880px) {
         padding: 10px 20px;
@@ -90,8 +90,10 @@ export default {
         border-radius: 5px;
         background: transparent;   
         color: #ffff;
+        text-decoration: none;
         cursor: pointer;
         transition: all .6s;
+        font-weight: 700;
 
         &:hover {
           background: rgba(196, 21, 32, 0.7);
