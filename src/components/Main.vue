@@ -1,20 +1,6 @@
 <template>
+  <Header />  
   <div class="main-banner">
-    <header class="header">
-      <div class="header-logo">
-        <a href="#">Empresa</a>
-      </div>
-      <div class="header-nav-menu">
-        <ul class="header-nav-menu-list">
-          <li class="header-nav-menu-list-item"><a href="#">Home</a></li>
-          <li class="header-nav-menu-list-item"><a href="#">Empresa</a></li>
-          <li class="header-nav-menu-list-item"><a href="#">Produtos</a></li>
-          <li class="header-nav-menu-list-item"><a href="#">Notícias</a></li>
-          <li class="header-nav-menu-list-item"><a href="#">Contato</a></li>
-          <li class="header-nav-menu-list-item"><button class="header-nav-menu-btn">Loja Online</button></li>
-        </ul>
-      </div>
-    </header>
     <div class="main-banner-icon">
       <a href="#">
         <img src="../assets/images/whats.png" alt="Logo Whatsapp">
@@ -25,10 +11,9 @@
         <img class="main-banner-content" src="../assets/images/banner.png" alt="Imagem de Banheiro">
       </div>
       <div class="main-banner-title">
-        <h3 class="main-banner-title-project">Design</h3>
-        <h1 class="main-banner-title-modern">Moderno</h1>
-        <div class="main-banner-title-modern-line">
-          <img src="../assets/images/line.png" alt="Imagem de linha">
+        <div class="main-banner-title-modern">
+          <h3 class="main-banner-title-modern-project">Design</h3>
+          <h1>Moderno</h1>
         </div>
         <p class="main-banner-title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum placeat quaerat, tempora quibusdam possimus omnis, ratione exercitationem nostrum, excepturi eligendi repellendus corrupti. Quis qui repellat minima deleniti! Quibusdam, enim illo.</p>
       </div>
@@ -39,195 +24,97 @@
 
 <script>
 import Produtos from './Produtos.vue'
+import Header from './Header.vue'
 
 export default {
   name: 'HelloWorld',
   components: {
-    Produtos
+    Header, Produtos
   }
 }
 </script>
 
 
 <style scoped lang="scss">
-.header {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  background: rgba(196, 21, 32, 0.7);
+.main-banner {
+  text-align: center;
   
+  &-img {
+    animation: show 6s;
 
-  &-logo {
-    display: flex;
-    align-items: center;
-
-    a {
-      margin-left: 42px;
-      font-size: 30px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-
-      &:hover {
-        color: #000;
-        transition: all .6s;
-      }
-
-      @media (max-width: 1005px) {
-      margin: 0;
-      } 
-    }
-
-    @media (max-width: 1005px) {
-      display: block;
+    img {
+      width: 100%;
+      height: 100vh;
     }
   }
 
-  &-nav-menu {
-    margin-right: 40px;
-    font-size: 30px;
-
-    &-list {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &-item {
-        a {
-          margin-left: 25px;
-          text-decoration: none;
-          color: #fff;
-          font-weight: 500;
-
-          &:hover {
-            color: #000;
-            transition: all .6s;
-          }
-
-          @media (max-width: 1005px) {
-            margin: 0;;
-          }
-        }
-      }
-
-      @media (max-width: 1005px) {
-        display: block;
-        font-size: 20px;
-        margin: 10px 0 0 0;
-        padding: 0;
-      }
-    }
-
-    &-btn {
-      margin-left: 25px;
-      border-radius: 10px;
-      width: 178px;
-      height: 57px;
-      cursor: pointer;
-      border: none;
-      font-size: 30px;
-      color: #C41520;
-      font-weight: 500;
-
-      &:hover {
-        border: 1px solid #000;
-        box-shadow: 1px 2px 5px #000;
-        color: #ff1423;
-      }
-
-      @media (max-width: 1005px) {
-        margin: 10px 0 0 0;
-        width: 100px;
-        height: 27px;
-        font-size: 15px;
-      }
-    }
-
-    @media (max-width: 1005px) {
-      display: block;
-      margin: 0;
-    }
-  }
-
-  @media (max-width: 1005px) {
+  &-title {
     display: block;
+    width: 100%;
     margin: 0;
-    padding: 30px 0;
-  }
-}
+    position: absolute;
+    top: 310px;
+    color: #ffff;
+    text-transform: uppercase;
 
-  .main-banner {
-    text-align: center;
-    
-    &-img {
-      animation: show 6s;
-
-      img {
-        width: 100%;
-        height: 100vh;
-      }
-    }
-
-    &-title {
-      margin: 0;
-      position: absolute;
-      top: 300px;
-      color: #ffff;
-      text-transform: uppercase;
-
+    &-modern {
+      text-align: left;
+      display: inline-block;
 
       &-project {
         font-size: 40px;
         margin: 0;
         font-weight: 100;
         letter-spacing: 2px;
+        text-align: center;
+        line-height: 90%;
       }
 
-      &-modern {
-        font-size: 80px;
-        margin: -25px 0 0 0;
-        font-weight: 100;
+      h1 {
         letter-spacing: 2px;
+        font-size: 80px;
+        font-weight: 200;
+        margin: 0;
+        line-height: 80%;
 
         @media (max-width: 430px) {
           font-size: 55px;
         }
-
-        &-line {
-          position: absolute;
-          top: 55%;
-          left: 35.5%;
-        }
       }
 
-      &-text {
-        padding: 0 336px;
-        margin: 0;
-        font-weight: 100;
+      &::after {
+        content: "";
+        width: 50px;
+        display: inline-block;
+        background: #C41520;
+        height: 6px;
+      } 
+    }
 
-        @media (max-width: 1005px) {
-          padding: 0 30px;
-        }
-      }
+    &-text {
+      padding: 0 336px;
+      margin: 10px 0 0 0;
+      font-weight: 100;
 
       @media (max-width: 1005px) {
-        top: 400px;
+        padding: 0 30px;
       }
     }
 
-    &-icon {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      z-index: 1;
-      margin: 0;
-      padding: 0;
+    @media (max-width: 1005px) {
+      top: 400px;
     }
   }
+
+  &-icon {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
 
   @keyframes show {
     0% {

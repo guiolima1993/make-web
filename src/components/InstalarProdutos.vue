@@ -57,13 +57,11 @@ export default {
       font-size: 25px;
       border: none;
       outline: none !important;
-      background: #FFFFFF;
       border: 1px solid #EDEDED;
       color: #CECECE;
       box-sizing: border-box;
       border-radius: 5px;
-      -webkit-appearance: none;
-      -moz-appearance: none;
+      font-family: 'Mulish', sans-serif;
       appearance: none;
       background: #ffff url('../assets/images/vector.png') 95.66% 50% no-repeat;
 

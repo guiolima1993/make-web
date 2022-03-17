@@ -3,11 +3,7 @@
     <h1 class="products-title">Nossos Produtos</h1>
     <div class="products-section">
       <div class="products-section-left">
-          <h1 class="products-section-left-title">
-            Acessórios
-          </h1>
-          <img src="../assets/images/line.png" alt="Imagem de linha">
-        <div class="products-section-left-after"></div>
+        <h1 class="products-section-left-title">Acessórios</h1>
         <p class="products-section-left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis reprehenderit, ipsam minima sunt praesentium error maiores eum quibusdam, esse, corporis placeat explicabo exercitationem! Enim consequatur minus quia cum. Est.</p>
         <a href="#" class="products-section-left-link">Saiba mais</a>
       </div>
@@ -20,10 +16,9 @@
         <img src="../assets/images/cat2.png" alt="Imagem de Saboneteira">
       </div>
       <div class="products-section-right">
-        <h1 class="products-section-left-title">
-          Saboneteira
-        </h1>
-        <img src="../assets/images/line.png" alt="Imagem de linha">
+        <div class="products-section-right-line">
+          <h1 class="products-section-right-title">Saboneteira</h1>
+        </div>
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, consectetur! Voluptates aut, cumque quia minus perspiciatis, velit ratione perferendis sapiente ea ut et. Minus quas modi, nemo et inventore laborum.
         </p>
@@ -32,10 +27,7 @@
     </div>
     <div class="products-section">
       <div class="products-section-left">
-        <h1 class="products-section-left-title">
-          Outros
-        </h1>
-        <img src="../assets/images/line.png" alt="Imagem de linha">
+        <h1 class="products-section-left-title">Outros</h1>
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deserunt nostrum obcaecati incidunt quas laborum aliquam vitae id velit itaque adipisci nulla vero temporibus consequatur et cupiditate, quod, fugiat cum!
         </p>
@@ -81,7 +73,6 @@ export default {
       align-items: center;
       padding: 0 102px 0 101px;
       margin-top: 100px;
-      flex-direction: row;
 
       &-left {
         text-align: left;
@@ -91,17 +82,29 @@ export default {
           font-size: 50px;
           text-transform: uppercase;
           margin: 0;
-          font-weight: 100;
+          line-height: 90%;
+          font-weight: 200;
+          display: flex;
+          flex-direction: column;
 
           @media (max-width: 990px) {
             font-size: 30px;
           }
+
+          &::after {
+            content: "";
+            width: 50px;
+            display: inline-block;
+            background: #C41520;
+            height: 6px;
+            margin-top: 20px;
+          } 
         }
 
         &-text {
           font-size: 17px;
           font-weight: 100;
-          margin: 30px 0;
+          margin: 20px 0;
 
           @media (max-width: 990px) {
             font-size: 10px;
@@ -119,6 +122,7 @@ export default {
           font-weight: 200;
           text-decoration: none;
           color: #000;
+          display: inline-block;
 
           &:hover {
             background: #e2e2e2;
@@ -155,6 +159,33 @@ export default {
           text-align: center;
           margin: 0 0 30px 0;
           padding: 0 10px;
+        }
+
+        &-title {
+          font-size: 50px;
+          text-transform: uppercase;
+          margin: 0;
+          line-height: 90%;
+          font-weight: 200;
+          display: flex;
+          flex-direction: column;
+
+          @media (max-width: 990px) {
+            font-size: 30px;
+          }
+
+          &::after {
+            content: "";
+            width: 50px;
+            display: inline-block;
+            background: #C41520;
+            height: 6px;
+            margin-top: 20px;
+          } 
+        }
+
+        &-line {
+          display: inline-block;
         }
       }
 
