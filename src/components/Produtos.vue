@@ -89,6 +89,7 @@ export default {
 
           @media (max-width: 990px) {
             font-size: 30px;
+            align-items: center;
           }
 
           &::after {
@@ -169,9 +170,11 @@ export default {
           font-weight: 200;
           display: flex;
           flex-direction: column;
+          align-items: flex-end;
 
           @media (max-width: 990px) {
             font-size: 30px;
+            align-items: center;
           }
 
           &::after {
