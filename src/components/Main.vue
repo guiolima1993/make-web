@@ -26,8 +26,9 @@
       </div>
       <div class="main-banner-title">
         <h3 class="main-banner-title-project">Design</h3>
-        <div class="main-banner-title-modern">
-          <h1>Moderno</h1>
+        <h1 class="main-banner-title-modern">Moderno</h1>
+        <div class="main-banner-title-modern-line">
+          <img src="../assets/images/line.png" alt="Imagem de linha">
         </div>
         <p class="main-banner-title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum placeat quaerat, tempora quibusdam possimus omnis, ratione exercitationem nostrum, excepturi eligendi repellendus corrupti. Quis qui repellat minima deleniti! Quibusdam, enim illo.</p>
       </div>
@@ -187,33 +188,20 @@ export default {
       }
 
       &-modern {
-        h1 {
-          font-size: 80px;
-          margin: -25px 0 0 0;
-          font-weight: 100;
-          letter-spacing: 2px;
+        font-size: 80px;
+        margin: -25px 0 0 0;
+        font-weight: 100;
+        letter-spacing: 2px;
 
-          @media (max-width: 430px) {
-            font-size: 55px;
-          }
+        @media (max-width: 430px) {
+          font-size: 55px;
         }
 
-        ::before {
-          content: "";
+        &-line {
           position: absolute;
-          width: 40px;
-          height: 0px;
-          left: 35.7%;
-          top: 110px;
-          border: 3px solid #C41520;
-          transform: rotate(-179.29deg);
-
-          @media (max-width: 435px) {
-            top: 85px;
-            left: 7%;
-            width: 25px;
-          } 
-        } 
+          top: 55%;
+          left: 35.5%;
+        }
       }
 
       &-text {

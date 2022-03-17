@@ -3,9 +3,10 @@
     <h1 class="products-title">Nossos Produtos</h1>
     <div class="products-section">
       <div class="products-section-left">
-        <h1 class="products-section-left-title">
-          Acessórios
-        </h1>
+          <h1 class="products-section-left-title">
+            Acessórios
+          </h1>
+          <img src="../assets/images/line.png" alt="Imagem de linha">
         <div class="products-section-left-after"></div>
         <p class="products-section-left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facilis reprehenderit, ipsam minima sunt praesentium error maiores eum quibusdam, esse, corporis placeat explicabo exercitationem! Enim consequatur minus quia cum. Est.</p>
         <a href="#" class="products-section-left-link">Saiba mais</a>
@@ -22,6 +23,7 @@
         <h1 class="products-section-left-title">
           Saboneteira
         </h1>
+        <img src="../assets/images/line.png" alt="Imagem de linha">
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, consectetur! Voluptates aut, cumque quia minus perspiciatis, velit ratione perferendis sapiente ea ut et. Minus quas modi, nemo et inventore laborum.
         </p>
@@ -33,6 +35,7 @@
         <h1 class="products-section-left-title">
           Outros
         </h1>
+        <img src="../assets/images/line.png" alt="Imagem de linha">
         <p class="products-section-left-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deserunt nostrum obcaecati incidunt quas laborum aliquam vitae id velit itaque adipisci nulla vero temporibus consequatur et cupiditate, quod, fugiat cum!
         </p>
